@@ -1,0 +1,18 @@
+<h2>Example List</h2>
+
+<table class=" table table-striped">
+    <thead>
+        <tr>
+            <th> Ex Item No. </th>
+            <th> Ex Item Name </th>
+            <th> Ex Item Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let exinventory of exampleinventories">
+            <th>{{exinventory.id}}</th>
+            <th>{{exinventory.exItemName}}</th>
+            <th>{{exinventory.exCategory}}</th>
+        </tr>
+    </tbody>
+</table>
