@@ -14,4 +14,7 @@ export class ExampleinventoryService {
   getExampleInventoryList() : Observable<Exampleinventory[]>{
     return this.httpClient.get<Exampleinventory[]>(`${this.baseURL}`)
   }
+  addExampleInventory(exampleInventory: Exampleinventory) : Observable<Exampleinventory>{
+    return this.httpClient.post<Exampleinventory>(this.baseURL,exampleInventory )
+  }
 }
