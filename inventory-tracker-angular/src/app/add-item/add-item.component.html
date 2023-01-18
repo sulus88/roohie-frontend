@@ -1,0 +1,7 @@
+<h1>Add item </h1>
+<form (ngSubmit)=onSubmit()>
+    <input [(ngModel)]="exampleInventory.id" type="text" name="id" placeHolder="id">
+    <input [(ngModel)]="exampleInventory.exItemName" type="text" name="exItemName" placeHolder="exItemName">
+    <input [(ngModel)]="exampleInventory.excategory" type="text" name="exCategory" placeHolder="exCategory">
+    <button id="submit" type="submit"> Add item </button>
+</form>

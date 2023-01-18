@@ -4,11 +4,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleInventoryListComponent } from './example-inventory-list/example-inventory-list.component';
+import { AddItemComponent } from './add-item/add-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleInventoryListComponent,
+    AddItemComponent,
 
   ],
   imports: [

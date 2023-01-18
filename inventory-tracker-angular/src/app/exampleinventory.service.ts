@@ -7,11 +7,19 @@ import { Exampleinventory } from './exampleinventory';
   providedIn: 'root'
 })
 export class ExampleinventoryService {
+  addExampleInventory(exampleInventory: Exampleinventory) {
+    throw new Error('Method not implemented.');
+  }
 
   private baseURL= "http://localhost:8080/api/inventories";
   constructor(private httpClient:HttpClient) { }
 
-  getExampleInventoryList() : Observable<Exampleinventory[]>{
+  public getExampleInventoryList() : Observable<Exampleinventory[]>{
     return this.httpClient.get<Exampleinventory[]>(`${this.baseURL}`)
   }
+
+ public addExampleInventory(exampleInventory: Exampleinventory) {
+    return this.httpClient.post<Exampleinventory>(this.baseURL,exampleInventory )
+  
+}
 }
