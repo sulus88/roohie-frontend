@@ -3,5 +3,6 @@
     <input [(ngModel)]="exampleInventory.id" type="text" name="id" placeHolder="id">
     <input [(ngModel)]="exampleInventory.exItemName" type="text" name="exItemName" placeHolder="exItemName">
     <input [(ngModel)]="exampleInventory.excategory" type="text" name="exCategory" placeHolder="exCategory">
-    <button id="submit" type="submit"> Add item </button>
+    <button id="submit" type="submit"><a routerLink="/addItem">Add item </a> </button>
+    <router-outlet></router-outlet>
 </form>

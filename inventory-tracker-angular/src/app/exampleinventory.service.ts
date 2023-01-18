@@ -18,7 +18,7 @@ export class ExampleinventoryService {
     return this.httpClient.get<Exampleinventory[]>(`${this.baseURL}`)
   }
 
- public addExampleInventory(exampleInventory: Exampleinventory) {
+ public save(exampleInventory: Exampleinventory) {
     return this.httpClient.post<Exampleinventory>(this.baseURL,exampleInventory )
   
 }

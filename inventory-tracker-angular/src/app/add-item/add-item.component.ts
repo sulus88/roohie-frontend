@@ -14,9 +14,9 @@ export class AddItemComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.addExampleInventory(this.exampleInventory);
+    this.save(this.exampleInventory);
   }
 
-private addExampleInventory(exampleInventory: Exampleinventory){
-this.exampleInvetoryService.addExampleInventory(exampleInventory);}
+private save(exampleInventory: Exampleinventory){
+this.exampleInvetoryService.save(exampleInventory);}
 }

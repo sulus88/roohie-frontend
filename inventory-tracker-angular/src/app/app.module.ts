@@ -10,7 +10,7 @@ import { AddItemComponent } from './add-item/add-item.component';
   declarations: [
     AppComponent,
     ExampleInventoryListComponent,
-    AddItemComponent,
+    //AddItemComponent,
 
   ],
   imports: [
